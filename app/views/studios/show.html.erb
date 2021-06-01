@@ -1,5 +1,10 @@
 <h1><%= @studio.name %>: <%= @studio.location %> </h1>
-<h3>Studio Movies</h3>
-<% @studio.movies.each do |movie| %>
+<h3>Studio Movies</h3>\
+
+<% @movies.each do |movie| %>
   <h4><%= movie.title %></h4>
+<% end %>
+
+<% @actors.each do |actor| %>
+  <h5><%= actor.name %></h5>
 <% end %>
